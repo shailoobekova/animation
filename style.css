@@ -1,0 +1,48 @@
+/* Здесь необходимо написать стили, при которых будут моргать глаза, работаем исключительно в @keyframes. остальные стили не трогаем*/
+
+.container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.eyes{
+  display: flex;
+  height: 120px;
+  align-items: center;
+}
+.box{
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+  background-color: #000;
+  margin: 10px;
+  animation: box 2s ease-in-out infinite;
+  transition: 5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+@keyframes box {
+  
+    0% {
+      transform: rotateX(250deg);
+    
+  }
+
+    
+}
+.point{
+  width: 10px;
+  height: 10px;
+  background-color: #FFF;
+}
+.stick{
+  width: 200px;
+  height: 10px;
+  background-color: #000;
+  margin: 20px;
+  margin-top: 50px;
+}
